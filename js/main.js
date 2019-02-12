@@ -21,8 +21,8 @@ $(document).ready(function() {
     e.preventDefault();
     let $value = $("#value");
     let val = parseInt($value.val());
-    if (val > 5 && val < 10000) {
-      var $elem = $("#progressbar > div");
+    if (val >= 5 && val <= 10000) {
+      var $elem = $("#progressBar > div");
       var width = 67;
       var id = setInterval(frame, 10);
       function frame() {
@@ -31,6 +31,7 @@ $(document).ready(function() {
         } else {
           width++;
           $elem.width(width + "%");
+          $elem.attr("aria-valuenow", width + "%");
         }
       }
     } else {
