@@ -1,0 +1,60 @@
+$mainfont: sans-serif;
+$colors: (
+  form: #fff
+);
+
+@function color($color-name) {
+  @return map-get($map: $colors, $key: $color-name);
+}
+body,
+html {
+  height: 100%;
+}
+
+body,
+h2,
+h3,
+p {
+  // to get rid of the margin that is added by the browser default
+  margin: 0;
+}
+
+h2 {
+  font-weight: 600;
+}
+h3 {
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: $mainfont;
+}
+
+#donationBlock {
+  background-color: color(form);
+  padding: 15px;
+  box-shadow: 0 0 5px 0px #888;
+  height: 250px;
+  width: 200px;
+}
+
+#saveForLater,
+#tellYourFriends,
+#giveNow {
+  background: #ccc;
+  cursor: pointer;
+  border-top: solid 2px #eaeaea;
+  border-left: solid 2px #eaeaea;
+  border-bottom: solid 2px #777;
+  border-right: solid 2px #777;
+  padding: 5px 5px;
+}
+
+#saveForLater.active {
+  background: #ff710c;
+  border-top: solid 2px #777;
+  border-left: solid 2px #777;
+  border-bottom: solid 2px #eaeaea;
+  border-right: solid 2px #eaeaea;
+}
