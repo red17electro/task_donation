@@ -10,6 +10,8 @@ I had to implement a small form.
 
 This is the final result, which took me about 1 hour to implement (with additional work of setting up the project and repository).
 
+![Design of the form](result/result.PNG)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -70,3 +72,4 @@ However, you can do it in any other way.
 - [Gulp](https://gulpjs.com/) - gulp is a toolkit for automating painful or time-consuming tasks in your development.
 - [SASS](https://sass-lang.com/) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 - [jQuery](http://jquery.com/) - jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler.
+- [Bootstrap](https://getbootstrap.com/) - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.
